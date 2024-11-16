@@ -13,6 +13,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json()); 
 
+app.use(cors({
+  origin:'http://localhost:3000'
+}));
+
 
 const JWT_SECRET = "abi@28@07@04"; 
 const ADMIN_EMAIL = "abinaya282004@gmail.com";
